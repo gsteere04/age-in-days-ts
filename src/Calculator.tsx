@@ -29,7 +29,6 @@ const Calculator: React.FC = () => {
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>): void => {
     // Prevents default form submit behavior, allowing our script to handle the form submission.
     event.preventDefault();
-    // Simple log to log our age in days.
     console.log("Age in days:", age);
     // Checks to see if age is of type number
     if (typeof age === "number") {
