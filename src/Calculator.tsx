@@ -26,7 +26,7 @@ const Calculator: React.FC = () => {
    * Handles the change event for the submit button.
    * @param {React.ChangeEvent<HTMLFormElement>} event - The submit change event
    */
-  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>): void => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     // Prevents default form submit behavior, allowing our script to handle the form submission.
     event.preventDefault();
     console.log("Age in days:", age);
